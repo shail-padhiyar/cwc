@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWC - CATSKILL WATERSHED CORPORATION</title>
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <!--========== Data Table Css links ==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+    <!--========== Data Table Css links ==========-->
+
+    <!--========== Css links ==========-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--========== Css links ==========-->
+
+    <!--========== Google Fonts ==========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!--========== Google Fonts ==========-->
+
+</head>
+
+<body>
+
+    <main class="d-flex vh-100">
+        <!--========== Sidebar Section ==========-->
+        <section class="sidebar-section active bg-light-blue" id="sidebar">
+            <span class="close-sidebar-ico cursor-pointer d-xl-none">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="logo-main d-flex justify-content-center align-items-center py-4">
+                <img class="logo img-fluid" src="images/logo.png" alt="logo">
+            </div>
+            <div class="inner-section">
+                <ul class="sidebar-menu ps-0">
+                    <li>
+                        <a href="index.html">
+                            <img class="me-3" src="images/dashboard.svg" alt="dashboard">
+                            <span>Dashboard</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="projects.html"><img class="me-3" src="images/projects.svg" alt="Projects">
+                            <span>Projects</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="user.html"><img class="me-3" src="images/user.svg" alt="user">
+                            <span>User</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="state.html"><img class="me-3" src="images/state.svg" alt="state">
+                            <span>State</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="county.html"><img class="me-3" src="images/county.svg" alt="county">
+                            <span>County</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="town.html"><img class="me-3" src="images/town.svg" alt="town">
+                            <span>Town</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="basin.html"><img class="me-3" src="images/basin.svg" alt="basin">
+                            <span>Basin</span>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="status.html"><img class="me-3" src="images/status.svg" alt="status">
+                            <span>Status</span></a>
+                    </li>
+                    <li>
+                        <a href="type.html"><img class="me-3" src="images/type.svg" alt="type">
+                            <span>Type</span></a>
+                    </li>
+                    <li>
+                        <a href="code-line.html"><img class="me-3" src="images/code-line.svg" alt="code line">
+                            <span>Code Line</span></a>
+                    </li>
+                    <li>
+                        <a href="reimbursement-level.html"><img class="me-3" src="images/reimbursement-level.svg"
+                                alt="reimbursement level">
+                            <span>Reimbursement Level</span></a>
+                    </li>
+                    <li>
+                        <a href="contractor.html"><img class="me-3" src="images/contractor.svg" alt="contractor">
+                            <span>Contractor</span></a>
+                    </li>
+                    <li>
+                        <a href="engineer.html"><img class="me-3" src="images/engineer.svg" alt="engineer">
+                            <span>Engineer</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="vendor.html"><img class="me-3" src="images/vendor.svg" alt="vendor">
+                            <span>Vendor</span></a>
+                    </li>
+                    <li>
+                        <a href="fund.html"><img class="me-3" src="images/fund.svg" alt="fund">
+                            <span>Fund</span></a>
+                    </li>
+                    <li>
+                        <a href="program.html"><img class="me-3" src="images/program.svg" alt="program">
+                            <span>Program</span></a>
+                    </li>
+                    <li>
+                        <a href="property.html"><img class="me-3" src="images/property.svg" alt="property">
+                            <span>Property</span></a>
+                    </li>
+                    <li>
+                        <a href="payment.html"><img class="me-3" src="images/payment.svg" alt="payment">
+                            <span>Payment</span></a>
+                    </li>
+                    <li>
+                        <a href="reports.html"><img class="me-3" src="images/reports.svg" alt="reports">
+                            <span>Reports</span></a>
+                    </li>
+                    <li>
+                        <a href="upload-data.html"><img class="me-3" src="images/upload-data.svg" alt="upload data">
+                            <span>Upload Data</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--========== Sidebar Section ==========-->
+
+
+        <!--========== Main Section ==========-->
+        <section class="main-section">
+            <div class="header d-flex">
+                <div class="section-title d-flex align-items-center">
+                    <img class="me-2 cursor-pointer" id="toggleSidebar" src="images/sidebar-toggler.svg"
+                        alt="sidebar toggle icon">
+                    <h3 class="mb-0">Vendor Management</h3>
+                </div>
+                <div class="ms-auto d-flex align-items-center me-sm-0 me-3">
+                    <img src="images/Bell.svg" alt="bell">
+                    <div class="user-profile">
+                        <div type="button" class="user cursor-pointer dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="ms-sm-4 ms-2" src="images/user-profile.jpg" alt="">
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li class="px-3 py-1">
+                                <img class="profile-img" src="images/user-profile.jpg" alt="">
+                                <span>John Smith</span>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-1 d-flex align-items-center" href="edit-profile.html"><img
+                                        src="images/edit-profile.svg" class="me-2" alt="edit profile"> Edit Profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-1 d-flex align-items-center" href="site-setting.html"><img
+                                        src="images/site-setting.svg" class="me-2" alt="" site setting> Site Settings
+                                </a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-1 d-flex align-items-center" href="login.html"><img
+                                        src="images/log-out.svg" class="me-2" alt="logout">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-body">
+                <div class="row mt-3">
+                    <div class="col-md-10 col-12 d-flex mt-4 mb-1">
+                        <button class="btn btn-primary ms-auto me-0 py-2 px-3" data-bs-toggle="modal"
+                            data-bs-target="#addVendorModal"><i class="fa-solid fa-plus"></i> Add Vendor</button>
+                    </div>
+                    <table id="vendorManagementDataTable" class="table table-striped nowrap mt-4">
+                        <thead>
+                            <tr>
+                                <th>Vendor Name</th>
+                                <th>Contact person</th>
+                                <th>Office Phone</th>
+                                <th>Cell Phone</th>
+                                <th>Fax</th>
+                                <th>Description</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><i class="fa-regular fa-pen-to-square edit-ico"></i> Ackerley & Son</td>
+                                <td>Don Ackerley</td>
+                                <td>(845) 985-7488</td>
+                                <td>(845) 985-7488</td>
+                                <td>(845) 985-7488</td>
+                                <td>Lorem ipsum dolor sit amet, consectetur adipisicing.</td>
+                                <td>
+                                    <div class="status-switch">
+                                        <label class="toggle">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                            <span class="labels" data-on="Active" data-off="Inactive"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-regular fa-pen-to-square edit-ico"></i> Bob Yeomens</td>
+                                <td>Bob Yeomens</td>
+                                <td>(845) 985-7488</td>
+                                <td>(845) 985-7488</td>
+                                <td>(845) 985-7488</td>
+                                <td></td>
+                                <td>
+                                    <div class="status-switch">
+                                        <label class="toggle">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                            <span class="labels" data-on="Active" data-off="Inactive"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td><i class="fa-regular fa-pen-to-square edit-ico"></i> Bruce Sabinski</td>
+                                <td>Bruce Sabinski</td>
+                                <td>(845) 985-7488</td>
+                                <td>(845) 985-7488</td>
+                                <td>(845) 985-7488</td>
+                                <td></td>
+                                <td>
+                                    <div class="status-switch">
+                                        <label class="toggle">
+                                            <input type="checkbox">
+                                            <span class="slider"></span>
+                                            <span class="labels" data-on="Active" data-off="Inactive"></span>
+                                        </label>
+                                    </div>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <span class="d-flex">&copy; Catskill Watershed Corporation. All rights reserved.</span>
+            </footer>
+
+        </section>
+        <!--========== Main Section ==========-->
+    </main>
+
+    <!--========== Modals ==========-->
+    <div class="modal fade" id="addVendorModal" tabindex="-1" aria-labelledby="add-vendor-modal-label"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content section-title">
+                <div class="modal-body p-4">
+                    <button type="button" class="btn-close btn-model-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+
+                    <h3>Add Vendor</h3>
+                    <form class="my-4">
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3 w-auto">
+                                    <label for="vendor-name" class="form-label">Vendor Name</label>
+                                    <input type="text" class="form-control" id="vendor-name">
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3 w-auto">
+                                    <label for="vendor-person" class="form-label">Contact Person</label>
+                                    <input type="text" class="form-control" id="vendor-person">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3 w-auto">
+                                    <label for="office-phone" class="form-label">Office Phone</label>
+                                    <input type="text" class="form-control" id="office-phone">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3 w-auto">
+                                    <label for="cell-phone" class="form-label">Cell Phone</label>
+                                    <input type="text" class="form-control" id="cell-phone">
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <div class="mb-3 w-auto">
+                                    <label for="fax" class="form-label">Fax</label>
+                                    <input type="text" class="form-control" id="fax">
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mb-3 w-auto">
+                                    <label for="description" class="form-label">Description</label>
+                                    <textarea class="form-control" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <div class="col-md-12">
+                                <div class="mt-2 mb-3 status-switch">
+                                    <label class="toggle">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                        <span class="labels" data-on="Active" data-off="Inactive"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button type="button" class="btn btn-primary py-2 px-3 me-3">Save</button>
+                    <button type="button" class="btn btn-outline-light py-2 px-3"
+                        data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== Modals ==========-->
+
+    <!--========== JS links ==========-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-bundle.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/style.js"></script>
+    <!--========== JS links ==========-->
+
+    <!--========== Data Table JS links ==========-->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $('#vendorManagementDataTable').dataTable({
+
+            // for chanage structure
+            dom: "<'row'<'col-sm-12 col-md-6 d-flex align-items-center justify-content-start'f><'col-sm-12 col-md-6 d-flex align-items-center justify-content-end'B>>" +
+                "<'row'<'col-md-10 col-12 mb-3 table-responsive'tr>>"
+            // +
+            ,
+            // "<'row'<'col-sm-10 hr-line'><'col-sm-10 d-flex justify-content-center'p> <'col-sm-10 hr-line'>>", // uncomment this line for show pagination
+
+            "pagingType": 'full_numbers', // for show full length og pages
+            "searching": false, // for remove search option
+            "lengthChange": false, // for remove per page records dropdown
+            "info": false, // for remove showing from to entries
+            "responsive": true,
+        });
+    </script>
+    <!--========== Data Table JS links ==========-->
+
+</body>
+
+</html>

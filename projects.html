@@ -1,0 +1,1098 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CWC - CATSKILL WATERSHED CORPORATION</title>
+
+    <link rel="icon" type="image/x-icon" href="images/logo.png">
+
+    <!--========== Data Table Css links ==========-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/5.3.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.13.6/css/dataTables.bootstrap5.min.css">
+    <!--========== Data Table Css links ==========-->
+
+
+    <!--========== Css links ==========-->
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/fontawesome.css">
+    <link rel="stylesheet" href="css/select2.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--========== Css links ==========-->
+
+
+    <!--========== Google Fonts ==========-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
+        rel="stylesheet">
+    <!--========== Google Fonts ==========-->
+
+</head>
+
+<body>
+
+    <main class="d-flex vh-100">
+        <!--========== Sidebar Section ==========-->
+        <section class="sidebar-section active bg-light-blue" id="sidebar">
+            <span class="close-sidebar-ico cursor-pointer d-xl-none">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="logo-main d-flex justify-content-center align-items-center py-4">
+                <img class="logo img-fluid" src="images/logo.png" alt="logo">
+            </div>
+            <div class="inner-section">
+                <ul class="sidebar-menu ps-0">
+                    <li>
+                        <a href="index.html"><img class="me-3" src="images/dashboard.svg"
+                                alt="dashboard"><span>Dashboard</span></a>
+                    </li>
+                    <li class="active">
+                        <a href="projects.html"><img class="me-3" src="images/projects.svg" alt="Projects">
+                            <span>Projects</span></a>
+                    </li>
+                    <li>
+                        <a href="user.html"><img class="me-3" src="images/user.svg" alt="user">
+                            <span>User</span></a>
+                    </li>
+                    <li>
+                        <a href="state.html"><img class="me-3" src="images/state.svg" alt="state">
+                            <span>State</span></a>
+                    </li>
+                    <li>
+                        <a href="county.html"><img class="me-3" src="images/county.svg" alt="county">
+                            <span>County</span></a>
+                    </li>
+                    <li>
+                        <a href="town.html"><img class="me-3" src="images/town.svg" alt="town">
+                            <span>Town</span></a>
+                    </li>
+                    <li>
+                        <a href="basin.html"><img class="me-3" src="images/basin.svg" alt="basin">
+                            <span>Basin</span></a>
+                    </li>
+                    <li>
+                        <a href="status.html"><img class="me-3" src="images/status.svg" alt="status">
+                            <span>Status</span></a>
+                    </li>
+                    <li>
+                        <a href="type.html"><img class="me-3" src="images/type.svg" alt="type">
+                            <span>Type</span></a>
+                    </li>
+                    <li>
+                        <a href="code-line.html"><img class="me-3" src="images/code-line.svg" alt="code line">
+                            <span>Code Line</span></a>
+                    </li>
+                    <li>
+                        <a href="reimbursement-level.html"><img class="me-3" src="images/reimbursement-level.svg"
+                                alt="reimbursement level"> <span>Reimbursement Level</span></a>
+                    </li>
+                    <li>
+                        <a href="contractor.html"><img class="me-3" src="images/contractor.svg" alt="contractor">
+                            <span>Contractor</span></a>
+                    </li>
+                    <li>
+                        <a href="engineer.html"><img class="me-3" src="images/engineer.svg" alt="engineer">
+                            <span>Engineer</span></a>
+                    </li>
+                    <li>
+                        <a href="vendor.html"><img class="me-3" src="images/vendor.svg" alt="vendor">
+                            <span>Vendor</span></a>
+                    </li>
+                    <li>
+                        <a href="fund.html"><img class="me-3" src="images/fund.svg" alt="fund">
+                            <span>Fund</span></a>
+                    </li>
+                    <li>
+                        <a href="program.html"><img class="me-3" src="images/program.svg" alt="program">
+                            <span>Program</span></a>
+                    </li>
+                    <li>
+                        <a href="property.html"><img class="me-3" src="images/property.svg" alt="property">
+                            <span>Property</span></a>
+                    </li>
+                    <li>
+                        <a href="payment.html"><img class="me-3" src="images/payment.svg" alt="payment">
+                            <span>Payment</span></a>
+                    </li>
+                    <li>
+                        <a href="reports.html"><img class="me-3" src="images/reports.svg" alt="reports">
+                            <span>Reports</span></a>
+                    </li>
+                    <li>
+                        <a href="upload-data.html"><img class="me-3" src="images/upload-data.svg" alt="upload data">
+                            <span>Upload Data</span></a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!--========== Sidebar Section ==========-->
+
+
+        <!--========== Main Section ==========-->
+        <section class="main-section">
+            <div class="header d-flex">
+                <div class="section-title d-flex align-items-center">
+                    <img class="me-2 cursor-pointer" id="toggleSidebar" src="images/sidebar-toggler.svg"
+                        alt="sidebar toggle icon">
+                    <h3 class="mb-0">Projects</h3>
+                </div>
+                <div class="ms-auto d-flex align-items-center me-sm-0 me-3">
+                    <img src="images/Bell.svg" alt="bell">
+                    <div class="user-profile">
+                        <div type="button" class="user cursor-pointer dropdown-toggle" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            <img class="ms-sm-4 ms-2" src="images/user-profile.jpg" alt="">
+                        </div>
+                        <ul class="dropdown-menu">
+                            <li class="px-3 py-1">
+                                <img class="profile-img" src="images/user-profile.jpg" alt="">
+                                <span>John Smith</span>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-1 d-flex align-items-center" href="edit-profile.html"><img
+                                        src="images/edit-profile.svg" class="me-2" alt="edit profile"> Edit Profile</a>
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-1 d-flex align-items-center" href="site-setting.html"><img
+                                        src="images/site-setting.svg" class="me-2" alt="" site setting> Site
+                                    Settings</a>
+                            </li>
+                            <li>
+                                <hr class="dropdown-divider">
+                            </li>
+                            <li>
+                                <a class="dropdown-item py-1 d-flex align-items-center" href="login.html"><img
+                                        src="images/log-out.svg" class="me-2" alt="logout">Logout</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="section-body projects">
+                <form>
+                    <div class="row filter-form align-items-end">
+                        <div class="col-lg-8 col-md-9 d-flex flex-md-nowrap flex-wrap filter-form-left">
+                            <div class="w-auto">
+                                <label for="project" class="form-label">Project #</label>
+                                <input type="text" class="form-control" id="project">
+                            </div>
+                            <div class="w-auto">
+                                <label for="owner" class="form-label">Owner</label>
+                                <input type="text" class="form-control" id="owner">
+                            </div>
+                            <div class="w-auto">
+                                <label for="tax-id" class="form-label">Tax ID #</label>
+                                <input type="text" class="form-control" id="tax-id">
+                            </div>
+                            <div class="w-auto d-flex flex-column justify-content-center">
+                                <label for="status" class="form-label">Status</label>
+                                <select class="select2-initialization" name="status">
+                                    <option>Checked Ok</option>
+                                    <option>Checked Rejected</option>
+                                    <option>Pending</option>
+                                </select>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-3 mt-md-0 mt-3">
+                            <div class="d-flex justify-content-end">
+                                <button class="btn btn-primary py-2 px-3 me-3"><img src="images/filter.svg"
+                                        alt="filter"></button>
+                                <button class="btn btn-primary py-2 px-3"><img src="images/file.svg"
+                                        alt="file"></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="row mt-4">
+                        <div class="nav-tabbing">
+                            <div class="nav nav-tabs" id="nav-tab" role="tablist">
+                                <button class="nav-link active" id="nav-general-information-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-general-information" type="button" role="tab"
+                                    aria-controls="nav-general-information" aria-selected="true">General
+                                    Information</button>
+                                <button class="nav-link" id="nav-system-detail-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-system-details" type="button" role="tab"
+                                    aria-controls="nav-system-details" aria-selected="false">System Details</button>
+                                <button class="nav-link" id="nav-dates-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-dates" type="button" role="tab" aria-controls="nav-dates"
+                                    aria-selected="false">Dates</button>
+                                <button class="nav-link" id="nav-notes-tab" data-bs-toggle="tab"
+                                    data-bs-target="#nav-notes" type="button" role="tab" aria-controls="nav-notes"
+                                    aria-selected="false">Notes</button>
+                            </div>
+                            <div class="tab-content p-3" id="nav-tabContent">
+                                <div class="tab-pane fade active show" id="nav-general-information" role="tabpanel"
+                                    aria-labelledby="nav-general-information-tab">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="first-name" class="form-label">First Name</label>
+                                                    <input type="text" class="form-control" id="first-name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="last-name" class="form-label">Last Name</label>
+                                                    <input type="text" class="form-control" id="last-name">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3"></div>
+                                            <div class="col-md-3"></div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="mailing-address" class="form-label">Mailing
+                                                        Address</label>
+                                                    <input type="text" class="form-control" id="mailing-address">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="city" class="form-label">City</label>
+                                                    <input type="text" class="form-control" id="city">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="state" class="form-label">State</label>
+                                                    <input type="text" class="form-control" id="state">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="zip" class="form-label">Zip</label>
+                                                    <input type="text" class="form-control" id="zip">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="home-phone" class="form-label">Home Phone</label>
+                                                    <input type="text" class="form-control" id="home-phone">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-100 d-flex flex-column justify-content-center">
+                                                    <label for="county" class="form-label">County</label>
+                                                    <div class="d-flex">
+                                                        <select class="w-100 select2-initialization" name="county">
+                                                            <option>Sullivan</option>
+                                                            <option>Sullivan</option>
+                                                            <option>Sullivan</option>
+                                                        </select>
+                                                        <a class="btn form-open-modal ms-2" data-bs-toggle="modal"
+                                                            data-bs-target="#countyModal"><i
+                                                                class="fa-solid fa-ellipsis"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-100 d-flex flex-column justify-content-center">
+                                                    <label for="town" class="form-label">Town</label>
+                                                    <div class="d-flex">
+                                                        <select class="w-100 select2-initialization me-2" name="town">
+                                                            <option>Fallsburg</option>
+                                                            <option>Fallsburg</option>
+                                                            <option>Fallsburg</option>
+                                                        </select>
+                                                        <a class="btn form-open-modal ms-2"><i
+                                                                class="fa-solid fa-ellipsis"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-100 d-flex flex-column justify-content-center">
+                                                    <label for="basin" class="form-label">Basin</label>
+                                                    <div class="d-flex">
+                                                        <select class="w-100 select2-initialization me-2" name="basin">
+                                                            <option>Neversink</option>
+                                                            <option>Neversink</option>
+                                                            <option>Neversink</option>
+                                                        </select>
+                                                        <a class="btn form-open-modal ms-2"><i
+                                                                class="fa-solid fa-ellipsis"></i></a>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="property-address" class="form-label">Property
+                                                        Address</label>
+                                                    <input type="text" class="form-control" id="property-address">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="property-city" class="form-label">City
+                                                        (Property)</label>
+                                                    <input type="text" class="form-control" id="property-city">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="property-state" class="form-label">State
+                                                        (Property)</label>
+                                                    <input type="text" class="form-control" id="property-state">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-3">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="property-zip" class="form-label">Zip (Property)</label>
+                                                    <input type="text" class="form-control" id="property-zip">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="nav-system-details" role="tabpanel"
+                                    aria-labelledby="nav-system-detail-tab">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="program" class="form-label">Program</label>
+                                                    <input type="text" class="form-control" id="program">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <div class="w-auto d-flex flex-column justify-content-center">
+                                                        <label for="contractor" class="form-label">Contractor</label>
+                                                        <div class="d-flex">
+                                                            <select class="select2-initialization me-2"
+                                                                name="contractor">
+                                                                <option>Don Ackerley</option>
+                                                                <option>Don Ackerley</option>
+                                                                <option>Don Ackerley</option>
+                                                            </select>
+                                                            <a class="btn form-open-modal ms-2"><i
+                                                                    class="fa-solid fa-ellipsis"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <div class="w-auto d-flex flex-column justify-content-center">
+                                                        <label for="engineer" class="form-label">Engineer</label>
+                                                        <div class="d-flex">
+                                                            <select class="select2-initialization me-2" name="engineer">
+                                                                <option>Engineer</option>
+                                                                <option>Engineer</option>
+                                                                <option>Engineer</option>
+                                                            </select>
+                                                            <a class="btn form-open-modal ms-2"><i
+                                                                    class="fa-solid fa-ellipsis"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="quote-approved-amount" class="form-label">Quote Approved
+                                                        Amount</label>
+                                                    <input type="text" class="form-control" id="quote-approved-amount">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <div class="w-auto d-flex flex-column justify-content-center">
+                                                        <label for="level-of-reimbursement" class="form-label">Level of
+                                                            Reimbursement</label>
+                                                        <div class="d-flex">
+                                                            <select class="select2-initialization me-2"
+                                                                name="level-of-reimbursement">
+                                                                <option>100</option>
+                                                                <option>200</option>
+                                                                <option>300</option>
+                                                            </select>
+                                                            <a class="btn form-open-modal ms-2"><i
+                                                                    class="fa-solid fa-ellipsis"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <div class="w-auto d-flex flex-column justify-content-center">
+                                                        <label for="property-type" class="form-label">Property
+                                                            Type</label>
+                                                        <div class="d-flex">
+                                                            <select class="select2-initialization me-2"
+                                                                name="property-type">
+                                                                <option>CD</option>
+                                                                <option>CD</option>
+                                                                <option>CD</option>
+                                                            </select>
+                                                            <a class="btn form-open-modal ms-2"><i
+                                                                    class="fa-solid fa-ellipsis"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="house-built" class="form-label">House Built</label>
+                                                    <input type="month" class="form-control date" id="house-built">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="bedrooms" class="form-label">Bedrooms</label>
+                                                    <input type="number" class="form-control date" id="bedrooms">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <div class="w-auto d-flex flex-column justify-content-center">
+                                                        <label for="system-type" class="form-label">System Type</label>
+                                                        <div class="d-flex">
+                                                            <select class="select2-initialization me-2"
+                                                                name="system-type">
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                                <option>Select</option>
+                                                            </select>
+                                                            <a class="btn form-open-modal ms-2"><i
+                                                                    class="fa-solid fa-ellipsis"></i></a>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="septic-maintenance-link" class="form-label">Septic
+                                                        Maintenance Link</label>
+                                                    <input type="text" class="form-control"
+                                                        id="septic-maintenance-link">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="backup-link" class="form-label">Backup Link</label>
+                                                    <input type="text" class="form-control" id="backup-link">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="nav-dates" role="tabpanel"
+                                    aria-labelledby="nav-dates-tab">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="sign-in-date" class="form-label">Sign in Date</label>
+                                                    <input type="date" class="form-control date" id="sign-in-date">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="design-app-received" class="form-label">Design App
+                                                        Received</label>
+                                                    <input type="date" class="form-control date"
+                                                        id="design-app-received">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="construction-certification-letter"
+                                                        class="form-label">Construction Certification Letter</label>
+                                                    <input type="date" class="form-control date"
+                                                        id="construction-certification-letter">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="failure-date" class="form-label">Failure Date</label>
+                                                    <input type="date" class="form-control date" id="failure-date">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="design-app-deemed-complete" class="form-label">Design
+                                                        App Deemed Complete</label>
+                                                    <input type="date" class="form-control date"
+                                                        id="design-app-deemed-complete">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="dep-construction-approval" class="form-label">DEP
+                                                        Construction Approval</label>
+                                                    <input type="date" class="form-control date"
+                                                        id="dep-construction-approval">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="data-to-nyc" class="form-label">Data to NYC</label>
+                                                    <input type="date" class="form-control date" id="data-to-nyc">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="design-approved" class="form-label">Design
+                                                        Approved</label>
+                                                    <input type="date" class="form-control date" id="design-approved">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="2-year-deadline" class="form-label">2 Year
+                                                        Deadline</label>
+                                                    <input type="date" class="form-control date" id="2-year-deadline">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="soils-date" class="form-label">Soils Date</label>
+                                                    <input type="date" class="form-control date" id="soils-date">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="quote-approved-date" class="form-label">Quote Approved
+                                                        Date</label>
+                                                    <input type="date" class="form-control date"
+                                                        id="quote-approved-date">
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="extension-deadline" class="form-label">Extension
+                                                        Deadline</label>
+                                                    <input type="date" class="form-control date"
+                                                        id="extension-deadline">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                                <div class="tab-pane fade" id="nav-notes" role="tabpanel"
+                                    aria-labelledby="nav-notes-tab">
+                                    <form>
+                                        <div class="row">
+                                            <div class="col-md-6">
+                                                <div class="mb-3 w-auto">
+                                                    <label for="extension-deadline" class="form-label">Notes</label>
+                                                    <textarea class="form-control" rows="4"
+                                                        id="floatingTextarea"></textarea>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+                <div class="row mt-3">
+                    <div class="col-12 d-flex mt-4 mb-1"><button class="btn btn-primary ms-auto py-2 px-3"><i
+                                class="fa-solid fa-plus"></i></button></div>
+                    <table id="projectDataTable" class="table table-striped nowrap mt-4" style="width:100%">
+                        <thead>
+                            <tr>
+                                <th>Fund</th>
+                                <th>Program</th>
+                                <th>Payment Date</th>
+                                <th>Code</th>
+                                <th>Requested</th>
+                                <th>Payment</th>
+                                <th>Vendor Name</th>
+                                <th>Comments</th>
+                                <th>Project</th>
+                                <th>Homeowner Last Name</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>20/08/2002</td>
+                                <td>PO</td>
+                                <td>$123.05</td>
+                                <td>$115.00</td>
+                                <td>All County</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>10/09/2002</td>
+                                <td>CON</td>
+                                <td>$1640.00</td>
+                                <td>$1640.00</td>
+                                <td>Ackerley & Son</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4 Septic Program IV</td>
+                                <td>Septic</td>
+                                <td>27/06/2017</td>
+                                <td>PO</td>
+                                <td>$252.50</td>
+                                <td>$252.50</td>
+                                <td>Homeowner</td>
+                                <td>po, riser, uncover</td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>20/08/2002</td>
+                                <td>PO</td>
+                                <td>$123.05</td>
+                                <td>$115.00</td>
+                                <td>All County</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>10/09/2002</td>
+                                <td>CON</td>
+                                <td>$1640.00</td>
+                                <td>$1640.00</td>
+                                <td>Ackerley & Son</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4 Septic Program IV</td>
+                                <td>Septic</td>
+                                <td>27/06/2017</td>
+                                <td>PO</td>
+                                <td>$252.50</td>
+                                <td>$252.50</td>
+                                <td>Homeowner</td>
+                                <td>po, riser, uncover</td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>20/08/2002</td>
+                                <td>PO</td>
+                                <td>$123.05</td>
+                                <td>$115.00</td>
+                                <td>All County</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>10/09/2002</td>
+                                <td>CON</td>
+                                <td>$1640.00</td>
+                                <td>$1640.00</td>
+                                <td>Ackerley & Son</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4 Septic Program IV</td>
+                                <td>Septic</td>
+                                <td>27/06/2017</td>
+                                <td>PO</td>
+                                <td>$252.50</td>
+                                <td>$252.50</td>
+                                <td>Homeowner</td>
+                                <td>po, riser, uncover</td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>20/08/2002</td>
+                                <td>PO</td>
+                                <td>$123.05</td>
+                                <td>$115.00</td>
+                                <td>All County</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>10/09/2002</td>
+                                <td>CON</td>
+                                <td>$1640.00</td>
+                                <td>$1640.00</td>
+                                <td>Ackerley & Son</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4 Septic Program IV</td>
+                                <td>Septic</td>
+                                <td>27/06/2017</td>
+                                <td>PO</td>
+                                <td>$252.50</td>
+                                <td>$252.50</td>
+                                <td>Homeowner</td>
+                                <td>po, riser, uncover</td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>20/08/2002</td>
+                                <td>PO</td>
+                                <td>$123.05</td>
+                                <td>$115.00</td>
+                                <td>All County</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>10/09/2002</td>
+                                <td>CON</td>
+                                <td>$1640.00</td>
+                                <td>$1640.00</td>
+                                <td>Ackerley & Son</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4 Septic Program IV</td>
+                                <td>Septic</td>
+                                <td>27/06/2017</td>
+                                <td>PO</td>
+                                <td>$252.50</td>
+                                <td>$252.50</td>
+                                <td>Homeowner</td>
+                                <td>po, riser, uncover</td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>20/08/2002</td>
+                                <td>PO</td>
+                                <td>$123.05</td>
+                                <td>$115.00</td>
+                                <td>All County</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>10/09/2002</td>
+                                <td>CON</td>
+                                <td>$1640.00</td>
+                                <td>$1640.00</td>
+                                <td>Ackerley & Son</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4 Septic Program IV</td>
+                                <td>Septic</td>
+                                <td>27/06/2017</td>
+                                <td>PO</td>
+                                <td>$252.50</td>
+                                <td>$252.50</td>
+                                <td>Homeowner</td>
+                                <td>po, riser, uncover</td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>20/08/2002</td>
+                                <td>PO</td>
+                                <td>$123.05</td>
+                                <td>$115.00</td>
+                                <td>All County</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>10/09/2002</td>
+                                <td>CON</td>
+                                <td>$1640.00</td>
+                                <td>$1640.00</td>
+                                <td>Ackerley & Son</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4 Septic Program IV</td>
+                                <td>Septic</td>
+                                <td>27/06/2017</td>
+                                <td>PO</td>
+                                <td>$252.50</td>
+                                <td>$252.50</td>
+                                <td>Homeowner</td>
+                                <td>po, riser, uncover</td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>20/08/2002</td>
+                                <td>PO</td>
+                                <td>$123.05</td>
+                                <td>$115.00</td>
+                                <td>All County</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>10/09/2002</td>
+                                <td>CON</td>
+                                <td>$1640.00</td>
+                                <td>$1640.00</td>
+                                <td>Ackerley & Son</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4 Septic Program IV</td>
+                                <td>Septic</td>
+                                <td>27/06/2017</td>
+                                <td>PO</td>
+                                <td>$252.50</td>
+                                <td>$252.50</td>
+                                <td>Homeowner</td>
+                                <td>po, riser, uncover</td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>20/08/2002</td>
+                                <td>PO</td>
+                                <td>$123.05</td>
+                                <td>$115.00</td>
+                                <td>All County</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>1 Septic Program I</td>
+                                <td>Priority</td>
+                                <td>10/09/2002</td>
+                                <td>CON</td>
+                                <td>$1640.00</td>
+                                <td>$1640.00</td>
+                                <td>Ackerley & Son</td>
+                                <td></td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td>4 Septic Program IV</td>
+                                <td>Septic</td>
+                                <td>27/06/2017</td>
+                                <td>PO</td>
+                                <td>$252.50</td>
+                                <td>$252.50</td>
+                                <td>Homeowner</td>
+                                <td>po, riser, uncover</td>
+                                <td>50001</td>
+                                <td class="d-flex align-items-center justify-content-between cursor-pointer">Abplanalp
+                                    <i class="fa-regular fa-pen-to-square edit-ico"></i>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <footer class="footer">
+                <span class="d-flex">&copy; Catskill Watershed Corporation. All rights reserved.</span>
+            </footer>
+
+        </section>
+        <!--========== Main Section ==========-->
+    </main>
+
+
+    <!--========== Modals ==========-->
+    <div class="modal fade" id="countyModal" tabindex="-1" aria-labelledby="county-modal-label" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content section-title">
+                <div class="modal-body p-4">
+                    <button type="button" class="btn-close btn-model-close" data-bs-dismiss="modal"
+                        aria-label="Close"></button>
+
+                    <h3>Add County</h3>
+                    <form class="my-4">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="mb-3 w-auto">
+                                    <label for="county" class="form-label">County</label>
+                                    <input type="text" class="form-control" id="county">
+                                </div>
+                                <div class="mb-3 w-auto">
+                                    <label for="county-description" class="form-label">Description</label>
+                                    <textarea class="form-control" rows="4" id="county-description"></textarea>
+                                </div>
+                                <div class="status-switch">
+                                    <label class="toggle">
+                                        <input type="checkbox">
+                                        <span class="slider"></span>
+                                        <span class="labels" data-on="Active" data-off="Inactive"></span>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+
+                    <button type="button" class="btn btn-primary py-2 px-3 me-3">Save</button>
+                    <button type="button" class="btn btn-outline-light py-2 px-3"
+                        data-bs-dismiss="modal">Cancel</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--========== Modals ==========-->
+
+
+
+    <!--========== JS links ==========-->
+    <script src="js/jquery.js"></script>
+    <script src="js/bootstrap-bundle.js"></script>
+    <script src="js/fontawesome.js"></script>
+    <script src="js/select2.js"></script>
+    <script src="js/style.js"></script>
+    <!--========== JS links ==========-->
+
+    <!--========== Data Table JS links ==========-->
+    <script src="https://cdn.datatables.net/1.13.6/js/jquery.dataTables.min.js"></script>
+    <script src="https://cdn.datatables.net/1.13.6/js/dataTables.bootstrap5.min.js"></script>
+    <script>
+        $('#projectDataTable').dataTable({
+
+            // for chanage structure
+            dom: "<'row'<'col-sm-12 col-md-6 d-flex align-items-center justify-content-start'f><'col-sm-12 col-md-6 d-flex align-items-center justify-content-end'B>>" +
+                "<'row'<'col-sm-12 mb-3 table-responsive'tr>>" +
+                "<'row'<'hr-line'><'col-sm-12 d-flex justify-content-center'p> <'hr-line'>>",
+
+            language: {
+                paginate: {
+                    first: '<<',
+                    previous: '<',
+                    next: '>',
+                    last: '>>'
+                },
+                aria: {
+                    paginate: {
+                        first: 'First',
+                        previous: 'Previous',
+                        next: 'Next',
+                        last: 'Last'
+                    }
+                }
+            },
+
+
+            "pagingType": 'full_numbers', // for show full length og pages
+            "searching": false, // for remove search option
+            "lengthChange": false, // for remove per page records dropdown
+            "info": false, // for remove showing from to entries
+            "responsive": true,
+        });
+    </script>
+    <!--========== Data Table JS links ==========-->
+
+</body>
+
+</html>

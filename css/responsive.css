@@ -1,0 +1,170 @@
+@media (max-width: 1440px) {}
+
+@media (max-width: 1200px) {
+    .sidebar-section.active~.main-section {
+        margin-left: 80px;
+    }
+
+    .sidebar-section~.main-section {
+        margin-left: 80px;
+    }
+
+    .main-section {
+        margin-left: 5rem;
+    }
+
+    .sidebar-section .close-sidebar-ico {
+        display: none;
+    }
+
+    .sidebar-section.active .close-sidebar-ico {
+        display: block;
+        position: absolute;
+        top: 5px;
+        right: 10px;
+    }
+
+    .header {
+        padding: 1rem;
+    }
+
+    .section-body {
+        padding: 1.5rem 2.5rem;
+    }
+}
+
+@media (max-width: 1024px) {
+    .projects .filter-form .select2-container {
+        width: 140px !important;
+    }
+}
+
+@media (max-width: 991px) {
+    .projects .filter-form .select2-container {
+        width: 100px !important;
+    }
+}
+
+@media (max-width: 768px) {
+    .projects .filter-form .select2-container {
+        width: 200px !important;
+    }
+    .projects .filter-form .filter-form-left {
+        gap: 15px;
+    }
+    .login-section .login-form .otp-digit{
+        height: 40px;
+        width: 40px;
+        font-size: 1rem;
+    }
+    .main-section .footer {
+        padding: 0rem 2.5rem 1.75rem;
+    }
+}
+
+@media (max-width: 575px) {
+    .section {
+        padding: 2rem;
+    }
+
+    .section-title h2 {
+        font-size: 24px;
+        line-height: 36px;
+    }
+
+    .section-title h3 {
+        font-size: 18px;
+        line-height: 27px;
+    }
+
+    .header {
+        padding: 1rem 0rem;
+    }
+
+    .section-body {
+        padding: 1rem 1.5rem;
+    }
+
+    .login-section .logo {
+        height: 125px;
+        width: 125px;
+    }
+    
+    .sidebar-section {
+        min-width: 60px;
+        width: 60px;
+    }
+
+    .sidebar-section.active~.main-section {
+        margin-left: 60px;
+    }
+
+    .sidebar-section~.main-section {
+        margin-left: 60px;
+    }
+
+    .sidebar-section .logo {
+        max-height: 50px;
+    }
+
+    .sidebar-section .sidebar-menu li a {
+        padding: 0.63rem 0rem 0.63rem 1rem;
+    }
+    .sidebar-section.active .sidebar-menu li a{
+        padding: 0.5rem 0rem 0.5rem 1rem;
+    }
+    .login-section .login-form .otp-input::before{
+        display: none;
+    }
+    .nav-tabbing .nav-tabs .nav-link{
+        border-radius: 10px;
+        margin-bottom: 5px;
+    }
+    .nav-tabbing .nav-tabs .nav-link.active{
+        border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+    }
+    .nav-tabbing .nav-tabs .nav-link.active::after{
+        display: none;
+    }
+    .nav-tabbing .tab-content{
+        border-radius: 10px;
+    }
+
+    /* datatable */
+    
+    /* datatable */
+
+}
+
+@media (max-width: 475px) {
+    .login-section .logo {
+        height: 100px;
+        width: 100px;
+    }
+    .login-section .login-form .otp-input{
+        gap: 15px;
+    }
+    .login-section .login-form .otp-digit {
+        height: 35px;
+        width: 35px;
+        font-size: 0.9rem;
+    }
+    .main-section .footer {
+        padding: 0rem 1.5rem 1.75rem;
+    }
+}
+
+@media (max-width: 375px) {
+    .login-section .login-form .otp-input {
+        gap: 5px;
+    }
+    .upload-file-inner p{
+        width: 180px;
+    }
+}
+@media (max-width: 320px) {
+    .login-section .login-form .otp-digit {
+        height: 30px;
+        width: 30px;
+    }
+}
